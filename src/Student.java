@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Student {
     private String name;
 //    private String address;
@@ -5,8 +7,10 @@ public class Student {
 
 //constructors (name, address, GPA)
 //TODO: add address, GPA
+
     public Student(String name) {
         this.name = name;
+
 // this.address = address;
 // this.GPA = GPA;
     }
@@ -32,5 +36,7 @@ public class Student {
    public void setGPA() {
         this.GPA = GPA;
         }
+
+
  */
 }
