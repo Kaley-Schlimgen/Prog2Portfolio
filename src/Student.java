@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Student {
+    //student data as private fields (name, address, GPA)
     private String name;
 //    private String address;
 //    private double GPA;
@@ -15,7 +16,13 @@ public class Student {
 // this.GPA = GPA;
     }
 
+
+    @Override
+    public String toString() {
+        return name;
+    }
 //getters and setters
+/*
     public String getName() {
         return name;
     }
@@ -23,7 +30,7 @@ public class Student {
     public void setName(String name) {
         this.name = name;
     }
-
+*/
 /* public String getAddress() {
         return address;
         }
