@@ -11,31 +11,35 @@ public class Main {
     public static void main(String[] args) throws IOException {
         LinkedList<Student> studentData = new LinkedList<>();
         Scanner scanner = new Scanner(System.in);
+        String addAnother = "yes";
 
+        while (addAnother.equalsIgnoreCase("yes")) {
 
-        for (int i = 0; i < 2; i++) {
-            System.out.print("Enter student name: ");
-            String name = scanner.nextLine();
+            System.out.println("ENTER STUDENT INFORMATION");
+            System.out.print("Name: ");
+                String name = scanner.nextLine();
 
-            System.out.print("Enter Address: ");
-            String address = scanner.nextLine();
+                System.out.print("Address: ");
+                String address = scanner.nextLine();
 
-            System.out.print("Enter GPA: ");
-            double GPA = scanner.nextDouble();
-            scanner.nextLine();
+                System.out.print("GPA: ");
+                double GPA = scanner.nextDouble();
+                scanner.nextLine();
 
-            studentData.add(new Student(name, address, GPA));
+                studentData.add(new Student(name, address, GPA));
 
+            System.out.print("Do you have a student to add (yes/no)? ");
+            addAnother = scanner.nextLine();
+            }
 
-        }
         scanner.close();
 
         //Sort linkedList by name in ascending order
-        Collections.sort(studentData, Comparator.comparing(Student::toString));
+        Collections.sort(studentData, Comparator.comparing(Student::getName));
 
         System.out.println("\nSTUDENT INFORMATION: ");
         for (Student student : studentData) {
-            System.out.println("\nName: " + student.toString() + "\nAddress: " + student.getAddress() +
+            System.out.println("\nName: " + student.getName() + "\nAddress: " + student.getAddress() +
                     "\nGPA: " + student.getGPA());
         }
 
@@ -45,7 +49,7 @@ public class Main {
     private static void writeToFile(String file, LinkedList<Student> studentData) throws IOException {
         FileWriter writer = new FileWriter(file);
         for (Student student : studentData) {
-            writer.write(student.toString() + ", " + student.getAddress() + ", " + student.getGPA() + "\n");
+            writer.write(student.getName() + ", " + student.getAddress() + ", " + student.getGPA() + "\n");
         }
         writer.close();
 
