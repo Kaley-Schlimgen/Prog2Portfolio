@@ -1,1 +1,5 @@
 STUDENT INFORMATION:
+
+Name: Bob
+Address: 123 S St
+GPA: 4.0

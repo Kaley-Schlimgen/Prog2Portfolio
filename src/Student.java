@@ -1,4 +1,9 @@
-
+/*
+ *
+ * Student class with student data as private fields.
+ * GPA validation is in this class.
+ *
+ */
 public class Student {
     //Student data as private fields (name, address, GPA)
     private String name;
@@ -9,7 +14,6 @@ public class Student {
         this.name = name;
         this.address = address;
         validateGPA(GPA);
-        //this.GPA = GPA;
     }
 
     //Validate numeric data for GPA

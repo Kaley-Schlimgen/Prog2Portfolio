@@ -1,5 +1,21 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+/*
+ *
+ * @author kaleyschlimgen
+ * Programming 2: Final Program
+ *
+ * Program Requirements:
+ * Program incorporates a loop that prompts user for student data.
+ * Student data are private fields in a Student class including:
+ *      String name, String address, double GPA
+ * Each student object is stored in a linked list
+ *
+ * After user enters data, contents are output in ascending sorted order
+ *   by name to a text file
+ *
+ * Validate numeric data for GPA
+ *
+ */
+
 import java.util.LinkedList;
 import java.util.Scanner;
 import java.io.FileWriter;
@@ -7,7 +23,7 @@ import java.io.IOException;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class Main {
+public class StudentInformation {
     public static void main(String[] args) throws IOException {
         //each student object stored in a linked list
         LinkedList<Student> studentData = new LinkedList<>();
@@ -43,19 +59,12 @@ public class Main {
         //Sort linkedList by name in ascending order
         Collections.sort(studentData, Comparator.comparing(Student::getName));
 
-        //Output student data
-/*        System.out.println("\nSTUDENT INFORMATION: ");
-        for (Student student : studentData) {
-            System.out.println("\nName: " + student.getName() + "\nAddress: " + student.getAddress() +
-                    "\nGPA: " + student.getGPA());
-        }
-*/
         System.out.println("\nSTUDENT INFO SUCCESSFULLY WRITTEN TO FILE: outputContents.txt");
 
         writeToFile("outputContents.txt", studentData);
     }
 
-    //Also output student data to a regular text file
+    //Output student data to a regular text file
     private static void writeToFile(String file, LinkedList<Student> studentData) throws IOException {
         FileWriter writer = new FileWriter(file);
         writer.write("STUDENT INFORMATION:\n");
@@ -64,7 +73,6 @@ public class Main {
                     "\nGPA: " + student.getGPA() + "\n");
         }
         writer.close();
-
     }
 }
 
