@@ -1,26 +1,42 @@
-<h1>Programming II Portfolio Project Name</h1>
+<h1>Program: Enter Student Data in Linked List and Print to Text File</h1>
+
+
+Class: Programming II
+
+Language: Java
+
+Environment: IntelliJ IDEA
 
 <h2>Description</h2>
-Description:
- Program incorporates a loop that prompts user for student data.
- Student data are private fields in a Student class including:
-      String name, String address, double GPA
- Each student object is stored in a linked list
- After user enters data, contents are output in ascending sorted order by name to a text file
+ Program incorporates a loop that prompts user for student data. Each student object is stored in a linked list. After user enters data, contents are output in ascending sorted order by name to a text file.
+
+ <h4>Student data are private fields in a Student class including:<h4>
+  
+- <b>String name</b>
  
-Validate numeric data for GPA
+- <b>String address</b>
+
+- <b>double GPA</b>
+
+
+
 <br />
 
 
+
+
+
+<!--
 <h2>Language Used</h2>
 
 - <b>Java</b> 
 
 <h2>Environments Used </h2>
 
-- <b>IDE?</b> (21H2)
+- <b>IntelliJ IDEA</b> 
+-->
 
-<h2>Program walk-through:</h2>
+<h2>Program walk-through</h2>
 <!--
 <p align="center">
 Launch the utility: <br/>
