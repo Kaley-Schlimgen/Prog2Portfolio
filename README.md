@@ -1,4 +1,4 @@
-<h1>Program: Enter Student Data in Linked List and Print to Text File</h1>
+<h1>Java Program: Student Data in Linked List, Printed to Text File</h1>
 
 
 Class: Programming II
