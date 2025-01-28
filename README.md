@@ -1,11 +1,18 @@
 <h1>Programming II Portfolio Project Name</h1>
 
 <h2>Description</h2>
-Description
+Description:
+ Program incorporates a loop that prompts user for student data.
+ Student data are private fields in a Student class including:
+      String name, String address, double GPA
+ Each student object is stored in a linked list
+ After user enters data, contents are output in ascending sorted order by name to a text file
+ 
+Validate numeric data for GPA
 <br />
 
 
-<h2>Languages and Utilities Used</h2>
+<h2>Language Used</h2>
 
 - <b>Java</b> 
 
