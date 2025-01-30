@@ -34,9 +34,12 @@ Environment: IntelliJ IDEA
 <h2>Environments Used </h2>
 
 - <b>IntelliJ IDEA</b> 
--->
+
 
 <h2>Program walk-through</h2>
+-->
+
+
 <!--
 <p align="center">
 Launch the utility: <br/>
